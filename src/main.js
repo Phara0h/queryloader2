@@ -28,3 +28,12 @@ if (typeof define === 'function' && define.amd) {
 }
 
 window.QueryLoader2 = QueryLoader2;
+
+var tmpOverlay = document.createElement("div");
+document.querySelector("body").appendChild(tmpOverlay);
+tmpOverlay.style.position = "fixed";
+tmpOverlay.style.top = 0;
+tmpOverlay.style.left = 0;
+tmpOverlay.style.width = "100%";
+tmpOverlay.style.height = "100%";
+tmpOverlay.style.backgroundColor = "#000";
